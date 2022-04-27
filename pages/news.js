@@ -1,11 +1,10 @@
-import { middlewareLoggedIn } from "../helpers/auth";
-import React, { useEffect } from "react";
+import { middlewareLogin } from "../helpers/auth";
 import MainLayout from "../components/layouts/main";
-import LoginForm from "../components/LoginForm";
+import NewsList from "../components/NewsList";
 import MainHead from "../components/layouts/head";
 
 export const getServerSideProps = (ctx) => {
-  const m = middlewareLoggedIn(ctx.req);
+  const m = middlewareLogin(ctx.req);
   if (m !== null) {
     return m;
   }
@@ -14,18 +13,18 @@ export const getServerSideProps = (ctx) => {
   };
 };
 
-function login() {
+function news() {
   return (
     <>
       <MainHead
         title={`News App | Login`}
-        description={`News App | Login by Yeremia Joy`}
+        description={`News App | News by Yeremia Joy`}
       />
       <MainLayout>
-        <LoginForm />
+        <NewsList />
       </MainLayout>
     </>
   );
 }
 
-export default login;
+export default news;

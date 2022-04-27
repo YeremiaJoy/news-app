@@ -1,0 +1,71 @@
+.form-container {
+  padding: 24px;
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  .submitted {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(41, 221, 41);
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .isAvailable {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(223, 41, 41);
+    padding: 12px;
+    border-radius: 6px;
+  }
+  h2 {
+    text-align: center;
+  }
+  form {
+    display: grid;
+    gap: 6px;
+  }
+  label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  input,
+  select {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(150, 150, 150);
+  }
+  .is-danger {
+    font-size: 12px;
+    color: red;
+    margin: 0;
+  }
+  .submit-btn {
+    color: #fff;
+    border-color: rgb(219, 29, 29);
+    cursor: pointer;
+    background-color: rgb(219, 29, 29);
+    margin-top: 10px;
+    transition: all 0.8 ease-out;
+    &.non-active {
+      cursor: no-drop !important;
+      background-color: #808080 !important;
+      border: none;
+    }
+    &:hover {
+      background-color: rgb(196, 3, 3);
+    }
+  }
+  span {
+    font-size: 12px;
+    text-align: end;
+    padding: 0 5px;
+    a {
+      cursor: pointer;
+      color: blue;
+    }
+  }
+}

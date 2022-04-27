@@ -1,7 +1,12 @@
 .footer-layout{
+  position: absolute;
+  bottom: 0;
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 24px 0;
+  height: 60px;
   font-size: 12px;
-  box-shadow: 0 1px 6px 0 rgb(49 53 59 / 12%);
+  border-top: 2.5px solid rgb(49 53 59 / 12%);
+  background-color: #fff;
 }
