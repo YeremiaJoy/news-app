@@ -42,12 +42,7 @@ const Articles = ({ ...val }) => {
     <div className="articles-card">
       <div className="title">{val.title}</div>
       {val.image && (
-        <img
-          src={val.image.small}
-          alt={val.title}
-          width="100%"
-          height="100%"
-        />
+        <img src={val.image.small} alt={val.title} width="100%" height="100%" />
       )}
       {/* <div className="author">Author: {val.author}</div> */}
       {/* <div className="source">{val.source.name}</div> */}
