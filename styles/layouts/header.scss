@@ -3,8 +3,8 @@
   top: 0;
   background-color: #fff;
   z-index: 100;
-  box-shadow: 0 1px 6px 0 rgb(49 53 59 / 12%); 
-  min-width: 400px;
+  box-shadow: 0 1px 6px 0 rgb(49 53 59 / 12%);
+  width: 100%;
 }
 
 .header-content {
@@ -47,7 +47,13 @@
   grid-template-columns: auto auto;
   gap: 15px;
   align-items: center;
-  span{
+  span {
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-logo span {
+    font-size: 16px;
   }
 }

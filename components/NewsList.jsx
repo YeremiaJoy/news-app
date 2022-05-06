@@ -44,6 +44,7 @@ const Articles = ({ ...val }) => {
       {val.image && (
         <img
           src={val.image.small}
+          alt={val.title}
           width="100%"
           height="100%"
         />

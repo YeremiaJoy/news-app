@@ -34,7 +34,7 @@ function Header() {
         <Link href="/">
           <a>
             <div className="header-logo">
-              <Image src="/images/news-logo.png" width={32} height={32} />
+              <Image src="/images/news-logo.png" alt="logo" width={32} height={32} />
               <span>News App</span>
             </div>
           </a>
